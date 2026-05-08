@@ -1,0 +1,24 @@
+﻿using DoctorLicenseManagement.Domain.Enums;
+
+namespace DoctorLicenseManagement.Domain.Entities;
+
+public class Doctor
+{
+    public Guid Id { get; set; }
+
+    public string FullName { get; set; } = string.Empty;
+
+    public string Email { get; set; } = string.Empty;
+
+    public string Specialization { get; set; } = string.Empty;
+
+    public string LicenseNumber { get; set; } = string.Empty;
+
+    public DateTime LicenseExpiryDate { get; set; }
+
+    public DoctorStatus Status { get; set; }
+
+    public DateTime CreatedDate { get; set; }
+
+    public bool IsDeleted { get; set; }
+}
